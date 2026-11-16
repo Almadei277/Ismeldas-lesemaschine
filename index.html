@@ -293,6 +293,19 @@ html body .hinweis, html body .kachel span {
   height:7px;
   border-radius:50%;
 }
+
+/* Tafelversion: mehr Raum und deutlich groessere Lesesilben. */
+.maschine { max-width:1480px; width:100%; margin:12px auto; padding:8px; }
+.stage { grid-template-columns:205px minmax(0,1fr); gap:12px; padding:18px; }
+.ismelda { max-height:245px; }
+.word { font-size:clamp(66px, 9vw, 124px); min-height:180px; line-height:1.25; gap:8px; margin:12px 0; }
+.word .silbe { white-space:nowrap; }
+.word .vokal .zeichen { margin-top:0; }
+@media(max-width:750px) {
+ .stage { grid-template-columns:1fr; }
+ .ismelda { max-height:150px; }
+ .word { font-size:clamp(52px, 11vw, 90px); min-height:115px; }
+}
 </style>
 </head>
 <body>
